@@ -39,8 +39,9 @@ class SagemakerStudioStack(core.Stack):
 		                                                                               subnet_ids=self.public_subnet_ids,
 		                                                                               role_sagemaker_studio_users=self.role_sagemaker_studio_domain)
 
-		team_to_add_in_sagemaker_studio = ["datascientist-team-A2", "datascientist-team-A3",
-		                                   "datascientist-team-A4"]
+		# team_to_add_in_sagemaker_studio = ["datascientist-team-A2", "datascientist-team-A3",
+		#                                    "datascientist-team-A4"]
+		team_to_add_in_sagemaker_studio = ["datascientist-team-A1"]
 		for _team in team_to_add_in_sagemaker_studio:
 			my_default_datascience_user = sagemakerStudioConstructs.SagemakerStudioUserConstruct(self,
 			                                                                                     _team,

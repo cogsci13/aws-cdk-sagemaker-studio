@@ -41,7 +41,7 @@ Step 5: Install the required dependencies:
 Step 6: Synthesize the templates. AWS CDK apps use code to define the infrastructure, and when run, they produce, or
 “synthesize” an AWS CloudFormation template for each stack defined in the application:
 
-`cdk synthesize`
+`cdk synthesize -c existing_vpc_id="<THE_VPC_ID_WHERE_TO_DEPLOY_SAGEMAKER_STUDIO>"`
 
 Step 7: Deploy the solution.
 
